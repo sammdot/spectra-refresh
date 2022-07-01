@@ -20,5 +20,6 @@ body {
 
 body,
 input[type="text"] {
-  font-family: BasierSquare;
+  font-family: BasierSquare, -apple-system, BlinkMacSystemFont, "Helvetica Neue",
+    Helvetica, Arial, sans-serif;
 }

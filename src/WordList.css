@@ -43,10 +43,6 @@
   user-select: none;
 }
 
-.word-list li .arrow {
-  font-family: "JetBrains Mono";
-}
-
 .word-list li:hover {
   background-color: #eee;
 }
@@ -67,9 +63,10 @@
   font-weight: 500;
 }
 
+.word-list li .arrow,
 .word-list .steno,
 .word-list .graph {
-  font-family: "JetBrains Mono";
+  font-family: "JetBrains Mono", Menlo, "Courier New", Courier, monospace;
   user-select: none;
 }
 
