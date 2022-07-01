@@ -1,6 +1,6 @@
 @media screen and (max-width: 959px) {
   .word-list .list {
-    padding: 10px;
+    padding: 10px auto;
   }
 }
 
@@ -16,21 +16,57 @@
 
   .word-list .detail {
     width: 70%;
-    padding: 16px 32px;
+    padding: 16px auto;
   }
 }
 
+.word-list {
+  align-items: start;
+}
+
+.word-list .words,
+.word-list .outlines {
+  margin: 0 -10px;
+  max-height: 500px;
+  overflow-y: scroll;
+}
+
+.word-list .words {
+  margin-bottom: 16px;
+}
+
+.word-list .count {
+  font-size: 90%;
+  font-style: italic;
+  color: #666;
+  padding: 0 10px;
+  margin-bottom: 8px;
+  margin-left: -10px;
+  user-select: none;
+}
+
+::-webkit-scrollbar {
+  -webkit-appearance: none;
+  width: 7px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 0 0 1px rgba(255, 255, 255, 0.5);
+}
+
 .word-list .detail {
-  padding: 16px 32px;
+  padding: 16px auto;
 }
 
 .word-list ul {
   padding-left: 0;
+  margin: 0;
 }
 
 .word-list li {
   list-style-type: none;
-  margin: auto -10px;
   padding: 6px 10px;
   border-radius: 6px;
   white-space: nowrap;

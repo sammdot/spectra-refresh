@@ -40,6 +40,13 @@ export default function WordList({ words, searchByStroke }: Props) {
     <>
       <div className="word-list">
         <div className="list">
+          {selectedWord ? (
+            <></>
+          ) : (
+            <div className="count">
+              {words.length} translation{words.length === 1 ? "" : "s"}
+            </div>
+          )}
           <ul className="words">
             {selectedWord ? (
               <li
@@ -73,6 +80,10 @@ export default function WordList({ words, searchByStroke }: Props) {
           </ul>
           {selectedWord ? (
             <>
+              <div className="count">
+                {currentWord.outlines.length} outline
+                {currentWord.outlines.length === 1 ? "" : "s"}
+              </div>
               <ul className="outlines">
                 {currentWord ? (
                   currentWord.outlines.map((ol) => (
