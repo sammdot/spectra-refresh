@@ -16,14 +16,19 @@ export interface Derivation {
   pages: Page[]
 }
 
+const apiUrl =
+  process.env.NODE_ENV === "development"
+    ? "https://spectra.sammdot.ca/request"
+    : "/request"
+
 function request(body: any): Promise<any> {
-  const strBody = JSON.stringify(body)
   return new Promise((resolve, reject) =>
-    fetch("/request", {
+    fetch(apiUrl, {
       method: "post",
-      body: strBody,
+      body: JSON.stringify(body),
       headers: {
         "Content-Type": "application/json",
+        Accept: "application/json",
       },
     }).then((res) => resolve(res.json()))
   )
