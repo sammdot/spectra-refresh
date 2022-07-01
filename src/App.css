@@ -13,7 +13,23 @@
   display: flex;
   flex-direction: row;
   align-items: center;
+}
+
+.attrib {
+  padding-top: 16px;
   padding-bottom: 32px;
+  color: var(--caption);
+  text-align: right;
+  font-size: 90%;
+}
+
+.attrib a {
+  color: var(--link);
+  text-decoration: none;
+}
+
+.attrib a:hover {
+  text-decoration: underline;
 }
 
 .logo {

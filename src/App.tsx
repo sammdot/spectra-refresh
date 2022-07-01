@@ -45,6 +45,12 @@ export default function App() {
           setUseRegex={setUseRegex}
         />
       </header>
+      <div className="attrib">
+        <a href="https://github.com/fourshade/spectra_lexer">Spectra Lexer</a>{" "}
+        by fourshade &bull;{" "}
+        <a href="https://github.com/sammdot/spectra-refresh">UI design</a> by
+        sammdot
+      </div>
       {words.length === 0 ? (
         <div className="empty">
           {!!searchText
