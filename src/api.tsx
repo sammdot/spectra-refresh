@@ -19,7 +19,7 @@ export interface Derivation {
 function request(body: any): Promise<any> {
   const strBody = JSON.stringify(body)
   return new Promise((resolve, reject) =>
-    fetch("https://spectra.sammdot.ca/request", {
+    fetch("/request", {
       method: "post",
       body: strBody,
       headers: {
