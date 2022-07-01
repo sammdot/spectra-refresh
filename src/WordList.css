@@ -2,6 +2,10 @@
   .word-list .list {
     padding: 10px auto;
   }
+
+  .word-list .detail {
+    margin-top: 24px;
+  }
 }
 
 @media screen and (min-width: 960px) {
@@ -29,6 +33,13 @@
   margin: 0 -10px;
   max-height: 500px;
   overflow-y: scroll;
+}
+
+@media screen and (max-width: 600px) {
+  .word-list .words,
+  .word-list .outlines {
+    max-height: 300px;
+  }
 }
 
 .word-list .words {
