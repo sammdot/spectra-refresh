@@ -34,5 +34,5 @@
 
 .empty {
   font-style: italic;
-  color: #666;
+  color: var(--caption);
 }

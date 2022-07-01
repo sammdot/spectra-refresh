@@ -16,10 +16,24 @@ body {
 body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  --sans-serif: BasierSquare, -apple-system, BlinkMacSystemFont,
+    "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --monospace: "JetBrains Mono", Menlo, "Courier New", Courier, monospace;
+
+  --border: #ccc;
+  --caption: #666;
+
+  --hover: #eee;
+  --word-active: #58aef8;
+  --word-active-hover: #89c6fa;
+  --word-active-text: white;
+  --outline-active: #58aef8;
+  --outline-active-hover: #89c6fa;
+  --outline-active-text: white;
 }
 
 body,
 input[type="text"] {
-  font-family: BasierSquare, -apple-system, BlinkMacSystemFont, "Helvetica Neue",
-    Helvetica, Arial, sans-serif;
+  font-family: var(--sans-serif);
 }

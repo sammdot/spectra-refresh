@@ -38,7 +38,7 @@
 .word-list .count {
   font-size: 90%;
   font-style: italic;
-  color: #666;
+  color: var(--caption);
   padding: 0 10px;
   margin-bottom: 8px;
   margin-left: -10px;
@@ -72,37 +72,39 @@
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-}
-
-.word-list li {
+  margin-right: 6px;
   cursor: pointer;
   user-select: none;
 }
 
 .word-list li:hover {
-  background-color: #eee;
+  background-color: var(--hover);
 }
 
 .word-list .words li.selected {
-  background-color: blue;
-  color: white;
+  background-color: var(--word-active);
+  color: var(--word-active-text);
   font-weight: 500;
 }
 
 .word-list .words li.selected:hover {
-  background-color: navy;
+  background-color: var(--word-active-hover);
 }
 
 .word-list .outlines li.selected {
-  background-color: #999;
-  color: white;
+  background-color: var(--outline-active);
+  color: var(--outline-active-text);
   font-weight: 500;
+}
+
+.word-list .outlines li.selected:hover {
+  background-color: var(--outline-active-hover);
 }
 
 .word-list li .arrow,
 .word-list .steno,
 .word-list .graph {
-  font-family: "JetBrains Mono", Menlo, "Courier New", Courier, monospace;
+  font-family: var(--monospace);
   user-select: none;
 }
 
