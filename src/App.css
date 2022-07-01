@@ -1,0 +1,38 @@
+.container {
+  padding: 40px;
+}
+
+@media screen and (min-width: 1000px) {
+  .container {
+    max-width: 920px;
+    margin: auto;
+  }
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-bottom: 32px;
+}
+
+.logo {
+  height: 64px;
+  width: 64px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 600px) {
+  .header {
+    flex-direction: column;
+  }
+
+  .container {
+    padding: 20px;
+  }
+}
+
+.empty {
+  font-style: italic;
+  color: #666;
+}

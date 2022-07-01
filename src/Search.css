@@ -1,0 +1,75 @@
+.search-field {
+  flex-grow: 1;
+}
+
+.search-field input[type="text"] {
+  margin: 0;
+  font-size: 16px;
+  line-height: 30px;
+  margin-top: 16px;
+  padding-left: 8px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  width: 100%;
+  margin-bottom: 8px;
+}
+
+.search-field input[type="text"] ::placeholder {
+  user-select: none;
+}
+
+.search-field .controls {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  user-select: none;
+}
+
+.search-field .controls > div {
+  margin-left: 16px;
+}
+
+.search-field .controls > div:first-child {
+  margin-left: 0;
+}
+
+.search-field .controls input {
+  cursor: pointer;
+}
+
+.search-field .controls label {
+  cursor: pointer;
+  margin-left: 6px;
+}
+
+@media screen and (min-width: 600px) {
+  .search-field {
+    margin-left: 32px;
+  }
+}
+
+@media screen and (min-width: 450px) and (max-width: 599px) {
+  .search-field {
+    width: 100%;
+  }
+
+  .search-field .controls {
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 449px) {
+  .search-field {
+    width: 100%;
+  }
+
+  .search-field .controls {
+    flex-direction: column;
+    align-items: start;
+  }
+
+  .search-field .controls > div {
+    margin-top: 4px;
+    margin-left: 0;
+  }
+}

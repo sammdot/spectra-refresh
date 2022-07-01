@@ -1,0 +1,87 @@
+@media screen and (max-width: 959px) {
+  .word-list .list {
+    padding: 10px;
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .word-list {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .word-list .list {
+    width: 30%;
+  }
+
+  .word-list .detail {
+    width: 70%;
+    padding: 16px 32px;
+  }
+}
+
+.word-list .detail {
+  padding: 16px 32px;
+}
+
+.word-list ul {
+  padding-left: 0;
+}
+
+.word-list li {
+  list-style-type: none;
+  margin: auto -10px;
+  padding: 6px 10px;
+  border-radius: 6px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.word-list li {
+  cursor: pointer;
+  user-select: none;
+}
+
+.word-list li .arrow {
+  font-family: "JetBrains Mono";
+}
+
+.word-list li:hover {
+  background-color: #eee;
+}
+
+.word-list .words li.selected {
+  background-color: blue;
+  color: white;
+  font-weight: 500;
+}
+
+.word-list .words li.selected:hover {
+  background-color: navy;
+}
+
+.word-list .outlines li.selected {
+  background-color: #999;
+  color: white;
+  font-weight: 500;
+}
+
+.word-list .steno,
+.word-list .graph {
+  font-family: "JetBrains Mono";
+  user-select: none;
+}
+
+.word-list .detail {
+  text-align: center;
+}
+
+.word-list .caption {
+  margin: 30px auto;
+}
+
+.word-list .board {
+  max-width: 400px;
+  margin: auto;
+}
