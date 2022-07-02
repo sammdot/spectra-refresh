@@ -1,0 +1,68 @@
+.board {
+  max-width: 400px;
+  margin: auto;
+}
+
+.board text.counter {
+  font-size: 24px;
+}
+
+.board path.label {
+  fill: white;
+}
+
+.board path.key {
+  fill: var(--key-base);
+  stroke: var(--key-stroke);
+}
+
+.board path.key.matched {
+  fill: var(--key-matched);
+}
+.board path.key.unmatched {
+  fill: var(--key-unmatched);
+}
+.board path.key.letters {
+  fill: var(--key-letters);
+}
+.board path.key.alt {
+  fill: var(--key-alt);
+}
+.board path.key.rare {
+  fill: var(--key-rare);
+}
+.board path.key.combo {
+  fill: var(--key-combo);
+}
+.board path.key.number {
+  fill: var(--key-number);
+}
+.board path.key.symbol {
+  fill: var(--key-symbol);
+}
+.board path.key.spelling {
+  fill: var(--key-spelling);
+}
+.board path.key.brief {
+  fill: var(--key-brief);
+}
+
+.board path.chain-casing {
+  fill: none;
+  stroke: var(--chain-casing);
+  stroke-width: 5px;
+}
+.board path.chain-inner {
+  fill: none;
+  stroke: var(--chain-inner);
+  stroke-width: 2px;
+}
+
+.graph {
+  font-family: var(--monospace);
+  user-select: none;
+}
+
+.caption {
+  margin: 30px auto;
+}

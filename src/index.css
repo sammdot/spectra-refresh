@@ -33,6 +33,22 @@ body {
   --outline-active: #58aef8;
   --outline-active-hover: #89c6fa;
   --outline-active-text: white;
+
+  --key-base: #ddd;
+  --key-matched: #58aef8;
+  --key-unmatched: #999;
+  --key-letters: #58aef8;
+  --key-alt: #57c9c9;
+  --key-rare: #9fcfff;
+  --key-combo: #adadff;
+  --key-number: #93cf65;
+  --key-symbol: #dbdb6b;
+  --key-spelling: #63c9c9;
+  --key-brief: #ffb061;
+  --key-stroke: none;
+
+  --chain-casing: #333;
+  --chain-inner: #b0b0b0;
 }
 
 body,

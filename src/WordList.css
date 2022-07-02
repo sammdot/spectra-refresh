@@ -113,8 +113,7 @@
 }
 
 .word-list li .arrow,
-.word-list .steno,
-.word-list .graph {
+.word-list .steno {
   font-family: var(--monospace);
   user-select: none;
 }
@@ -122,13 +121,4 @@
 .word-list .detail {
   text-align: center;
   overflow-y: scroll;
-}
-
-.word-list .caption {
-  margin: 30px auto;
-}
-
-.word-list .board {
-  max-width: 400px;
-  margin: auto;
 }
