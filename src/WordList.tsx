@@ -113,7 +113,12 @@ export default function WordList({ words, searchByStroke }: Props) {
           )}
         </div>
         <div className="detail">
-          <DerivationDetail derivation={derivation} />
+          <DerivationDetail
+            word={selectedWord}
+            outline={selectedOutline}
+            searchBySteno={searchByStroke}
+            derivation={derivation}
+          />
         </div>
       </div>
     </>

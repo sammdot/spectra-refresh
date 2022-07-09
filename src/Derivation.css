@@ -1,3 +1,16 @@
+.derivation-header {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 1.4em;
+}
+.derivation-header .word {
+  font-family: var(--sans-serif);
+}
+.derivation-header .arrow,
+.derivation-header .outline {
+  font-family: var(--monospace);
+}
+
 .board {
   max-width: 400px;
   margin: auto;

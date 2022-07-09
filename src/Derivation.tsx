@@ -3,6 +3,9 @@ import { Derivation } from "./api"
 import "./Derivation.css"
 
 type Props = {
+  word: string | null
+  outline: string | null
+  searchBySteno: boolean
   derivation: Derivation | null
 }
 
@@ -35,7 +38,12 @@ function addNumbers(svg: string): string {
   )
 }
 
-export default function DerivationDetail({ derivation }: Props) {
+export default function DerivationDetail({
+  word,
+  outline,
+  searchBySteno,
+  derivation,
+}: Props) {
   const [pageNumber, setPageNumber] = useState<number>(0)
   const [hoverPageNumber, setHoverPageNumber] = useState<number>(0)
 
@@ -57,6 +65,21 @@ export default function DerivationDetail({ derivation }: Props) {
     <></>
   ) : (
     <>
+      <div className="derivation-header">
+        {searchBySteno ? (
+          <>
+            <span className="outline">{word}</span>
+            <span className="arrow">&nbsp;&rarr;&nbsp;</span>
+            <span className="word">{outline}</span>
+          </>
+        ) : (
+          <>
+            <span className="word">{word}</span>
+            <span className="arrow">&nbsp;&rarr;&nbsp;</span>
+            <span className="outline">{outline}</span>
+          </>
+        )}
+      </div>
       <div
         className="graph"
         dangerouslySetInnerHTML={{
